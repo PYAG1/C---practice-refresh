@@ -1,17 +1,24 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(){
   //simple for loop
-  for( int i = 0 ; i < 15 ; i++){
-    cout << "hello "<< endl;
-  }
-  cout << "hi";
 
 
 long dividend, divisor;
-char
+char ch;
+
+do{
+  cout << "Enter dividend: "; cin >> dividend;
+  cout << "Enter divisor: "; cin >> divisor;
+  cout << "Quotient is " << dividend/divisor;
+  cout << "your remainder is: " << dividend % divisor;
+  cout << "\nDo another : y/n" ; cin >> ch;
+
+}
+while(ch == 'y' );
 
 
 };
